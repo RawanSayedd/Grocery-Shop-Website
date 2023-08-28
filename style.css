@@ -305,6 +305,9 @@ button a {
 .features .content .card {
   height: 60vh;
 }
+.features .content .card-img {
+  height: 300px;
+}
 .content .card-body {
   color: rgb(0, 0, 85);
 }
