@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Shop Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+        <div class="content">
+          <div class="logo-brand">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <a href="#">Groco</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn"><i class="fa-solid fa-times"></i></div>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#blog">Blogs</a></li>
+          </ul>
+          <div class="right-icons">
+            <div class="icon menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <i class="search-btn fa-solid fa-search"></i>
+            <i class="cart-btn fa-solid fa-shopping-cart"></i>
+            <i class="sign-btn fa-solid fa-user"></i>
+          </div>
+          <!-- search part in header -->
+          <div class="search-form">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              id="search-box"
+              placeholder="Search Here.."
+            />
+          </div>
+          <!-- cart container in header -->
+          <div class="cart-items-container">
+            <div class="cart-items">
+              <div class="cart-content">
+                <div class="cart-img">
+                  <img
+                    src="images/fresh-organic-cucumbers-red-basket-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h5 style="font-size: 18px">Cucumber</h5>
+                  <div class="price">$15.9 <span>Qt:1</span></div>
+                </div>
+              </div>
+              <div class="fas fa-trash"></div>
+            </div>
+            <div class="cart-items">
+              <div class="cart-content">
+                <div class="cart-img">
+                  <img
+                    src="images/fresh-organic-cucumbers-red-basket-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h5 style="font-size: 18px">Cucumber</h5>
+                  <div class="price">$15.9 <span>Qt:1</span></div>
+                </div>
+              </div>
+              <div class="fas fa-trash"></div>
+            </div>
+            <div class="cart-items">
+              <div class="cart-content">
+                <div class="cart-img">
+                  <img
+                    src="images/fresh-organic-cucumbers-red-basket-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h5 style="font-size: 18px">Cucumber</h5>
+                  <div class="price">$15.9 <span>Qt:1</span></div>
+                </div>
+              </div>
+              <div class="fas fa-trash"></div>
+            </div>
+            <div class="cart-items">
+              <div class="cart-content">
+                <div class="cart-img">
+                  <img
+                    src="images/fresh-organic-cucumbers-red-basket-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h5 style="font-size: 18px">Cucumber</h5>
+                  <div class="price">$15.9 <span>Qt:1</span></div>
+                </div>
+              </div>
+              <div class="fas fa-trash"></div>
+            </div>
+            <button>
+              <a href="#" class="btn">Check Out Now</a>
+            </button>
+          </div>
+          <!-- sign in header -->
+          <div class="sign-in-container">
+            <div class="sign-content">
+              <h3>login now</h3>
+              <input
+                class="form-control mr-sm-2"
+                id="email-box"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <input
+                class="form-control mr-sm-2"
+                id="password-box"
+                type="password"
+                placeholder="password"
+              />
+              <small>Don't have an account? <a href="#">Create Now!</a></small>
+              <button><a href="#">Login Now</a></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <div class="title">
+          <h3>Fresh and <span>Organic </span>Products For You</h3>
+          <p class="text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+            soluta velit nemo voluptates maiores nihil.
+          </p>
+          <button><a href="#products">Shop Now</a></button>
+        </div>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <div class="content">
+        <div class="container-fluid mb-5">
+          <div class="text-center m-5">
+            <h1 class="heading-style">Our <span>Features</span></h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img class="card-img" src="images/Peach-pana.png" alt="" />
+                <div class="card-body text-center">
+                  <h3 class="card-title">Fresh and Organic</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button><a href="#">Read More</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="images/Delivery address-rafiki.png"
+                  alt=""
+                />
+                <div class="card-body text-center">
+                  <h3 class="card-title">Free Delivery</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button><a href="#">Read More</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="images/Payment Information-pana.png"
+                  alt=""
+                />
+                <div class="card-body text-center">
+                  <h3 class="card-title">Easy Payments</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button><a href="#">Read More</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="content">
+        <div class="container-fluid mb-5">
+          <div class="text-center m-5">
+            <h1 class="heading-style">Our <span>Products</span></h1>
+          </div>
+          <div class="product-slider">
+            <div class="row wrapper">
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="images/fresh-organic-cucumbers-red-basket-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay.jpg"
+                    alt=""
+                  />
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Fresh Cucumber</h3>
+                    <p class="card-text">$4.99 - $10.99</p>
+                    <div class="star-icons mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <button><a href="#">Add to Cart</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="images/green-bell-peppers-metallic-basket-marble-table.jpg"
+                    alt=""
+                  />
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Fresh Pepper</h3>
+                    <p class="card-text">$4.99 - $10.99</p>
+                    <div class="star-icons mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <button><a href="#">Add to Cart</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="images/front-view-different-ingredients-onions-garlic-inside-basket.jpg"
+                    alt=""
+                  />
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Fresh Onion</h3>
+                    <p class="card-text">$4.99 - $10.99</p>
+                    <div class="star-icons mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <button><a href="#">Add to Cart</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="images/red-tomatoes-isolated-wooden-plate.jpg"
+                    alt=""
+                  />
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Fresh Tomato</h3>
+                    <p class="card-text">$4.99 - $10.99</p>
+                    <div class="star-icons mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <button><a href="#">Add to Cart</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="images/side-view-eggplants-basket-wooden-background.jpg"
+                    alt=""
+                  />
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Fresh Eggplant</h3>
+                    <p class="card-text">$4.99 - $10.99</p>
+                    <div class="star-icons mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <button><a href="#">Add to Cart</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="images/four-fresh-zucchini-vegetables-sackcloth-high-quality-photo.jpg"
+                    alt=""
+                  />
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Fresh zucchini</h3>
+                    <p class="card-text">$4.99 - $10.99</p>
+                    <div class="star-icons mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <button><a href="#">Add to Cart</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories" id="categories">
+      <div class="content">
+        <div class="container-fluid mb-5">
+          <div class="text-center m-5">
+            <h1 class="heading-style">Our <span>Categories</span></h1>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <div class="card">
+                            <img
+                              class="card-img"
+                              src="/images/basket-with-harvested-vegetables.jpg"
+                              alt=""
+                            />
+                            <div class="card-body text-center">
+                              <h3 class="card-title">Organic Vegetables</h3>
+                              <p class="card-text">Up to 45% off</p>
+                              <div class="star-icons mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                              </div>
+                              <button><a href="#">Read More</a></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="card">
+                            <img
+                              class="card-img"
+                              src="images/fruits.JPG"
+                              alt=""
+                            />
+                            <div class="card-body text-center">
+                              <h3 class="card-title">Fresh Fruits</h3>
+                              <p class="card-text">Up to 45% off</p>
+                              <div class="star-icons mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                              </div>
+                              <button><a href="#">Read More</a></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="card">
+                            <img
+                              class="card-img"
+                              src="images/meat.JPG"
+                              alt=""
+                            />
+                            <div class="card-body text-center">
+                              <h3 class="card-title">Fresh Meat</h3>
+                              <p class="card-text">Up to 45% off</p>
+                              <div class="star-icons mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                              </div>
+                              <button><a href="#">Read More</a></button>
+                            </div>
+                          </div>
+                        </div>
+                       
+                      </div>
+              </div>
+                    <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 col-12">
+                    <div class="card">
+                      <img
+                        class="card-img"
+                        src="images/milk-products-wooden-table.jpg"
+                        alt=""
+                      />
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Dairy Products</h3>
+                        <p class="card-text">Up to 45% off</p>
+                        <div class="star-icons mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                        </div>
+                        <button><a href="#">Read More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class="card">
+                      <img
+                        class="card-img"
+                        src="images/basket-with-harvested-vegetables.jpg"
+                        alt=""
+                      />
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Organic Vegetables</h3>
+                        <p class="card-text">Up to 45% off</p>
+                        <div class="star-icons mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                        </div>
+                        <button><a href="#">Read More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class="card">
+                      <img
+                        class="card-img"
+                        src="images/fruits.JPG"
+                        alt=""
+                      />
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Fresh Fruits</h3>
+                        <p class="card-text">Up to 45% off</p>
+                        <div class="star-icons mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                        </div>
+                        <button><a href="#">Read More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+              </div>
+         
+        </div>
+      </div>
+    </section>
+    <section class="review" id="review">
+      <div class="content">
+        <div class="container-fluid mb-5">
+          <div class="text-center m-5">
+            <h1 class="heading-style">Customer's <span>Review</span></h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-12 my-3">
+                <div class="card my-2 text-center">
+                  <div class="card-body">
+                    <img class="card-img" src="images/person1.webp" alt="">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quia adipisci facilis nulla, quasi id dolorem illum explicabo reprehenderit in commodi! Aliquam in maiores sit libero debitis dolorum accusamus reiciendis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>                  
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 my-3">
+              <div class="card my-2 text-center">
+                <div class="card-body">
+                  <img class="card-img" src="images/person2.webp" alt="">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quia adipisci facilis nulla, quasi id dolorem illum explicabo reprehenderit in commodi! Aliquam in maiores sit libero debitis dolorum accusamus reiciendis.</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 my-3">
+            <div class="card my-2 text-center">
+              <div class="card-body">
+                  <img class="card-img" src="images/person3.webp" alt="">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quia adipisci facilis nulla, quasi id dolorem illum explicabo reprehenderit in commodi! Aliquam in maiores sit libero debitis dolorum accusamus reiciendis.</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              
+              </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+      <div class="content">
+        <div class="container-fluid mb-5">
+          <div class="text-center m-5">
+            <h1 class="heading-style">Our <span>Blogs</span></h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img class="card-img" src="images/vegetables-752153_1280.jpg" alt="">
+                <div class="card-body">
+                  <div class="blog-icon">
+                    <div class="blog-left">
+                      <i class="fas fa-user"></i>
+                      <p> By Admin</p>
+                    </div>
+                    <div class="blog-right">
+                      <i class="fas fa-calendar"></i>
+                      <p>28th August, 2023</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <h3 class="card-title">Fresh and Organic Vegetables and Fruits</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa cum explicabo!</p>
+                  <button><a href="#">Read More</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img class="card-img" src="images/vegetables-1584999_1280.jpg" alt="">
+                <div class="card-body">
+                  <div class="blog-icon">
+                    <div class="blog-left">
+                      <i class="fas fa-user"></i>
+                      <p> By Admin</p>
+                    </div>
+                    <div class="blog-right">
+                      <i class="fas fa-calendar"></i>
+                      <p>28th August, 2023</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <h3 class="card-title">Fresh and Organic Vegetables and Fruits</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa cum explicabo!</p>
+                  <button><a href="#">Read More</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <img class="card-img" src="images/pumpkin-1768857_1280.jpg" alt="">
+                <div class="card-body">
+                  <div class="blog-icon">
+                    <div class="blog-left">
+                      <i class="fas fa-user"></i>
+                      <p> By Admin</p>
+                    </div>
+                    <div class="blog-right">
+                      <i class="fas fa-calendar"></i>
+                      <p>28th August, 2023</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <h3 class="card-title">Fresh and Organic Vegetables and Fruits</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa cum explicabo!</p>
+                  <button><a href="#">Read More</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+    class="text-center text-lg-start text-dark"
+    style="background-color: rgba(255, 166, 0, 0.6); margin-top: 30px;"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">
+        Groco
+      </h6>
+      <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et id, omnis iure nostrum dolor similique odit ratione illum aliquid!
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+      <p>
+        <a  href="#home" class="text-dark">Home</a>
+      </p>
+      <p>
+        <a href="#features" class="text-dark">About Us</a>
+      </p>
+      <p>
+        <a href="#products" class="text-dark">Our Products</a>
+      </p>
+      <p>
+        <a href="#review" class="text-dark">Customer's Review</a>
+      </p>
+      <p>
+        <a href="#blog" class="text-dark">Our Blogs</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">
+        Useful links
+      </h6>
+      <p>
+        <a href="#"  class="text-dark">My Account</a>
+      </p>
+      <p>
+        <a href="#" class="text-dark">My Order</a>
+      </p>
+      <p>
+        <a href="#" class="text-dark">My Favorite</a>
+      </p>
+      <p>
+        <a href="#" class="text-dark">Help</a>
+      </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+      <p><i class="fas fa-home mr-3"></i> Giza, Egypt</p>
+      <p class="d-flex justify-content-center"><i class="fas fa-envelope mr-3 mt-1"><a href="#mailto:rawansayed143@gmail.com" style="color: black;"></i> rawansayed143@gmail.com</a></p>
+      <p><i class="fas fa-phone mr-3"></i> +201243572221</p>
+      <p><i class="fas fa-print mr-3"></i> +201654298722</p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3" style="color: gray;">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+  <div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-7 col-lg-8 text-center text-md-start">
+      <!-- Copyright -->
+      <div class="p-3">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://github.com/RawanSayedd"
+           style="font-weight: 600;">Rawan Sayed Aly</a
+          >
+      </div>
+      <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+      <!-- Facebook -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-dark"
+         role="button"
+         ><i class="fab fa-facebook-f"></i
+        ></a>
+
+      <!-- Twitter -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-twitter"></i
+        ></a>
+
+      <!-- Google -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-linkedin-in"></i
+        ></a>
+
+      <!-- Instagram -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-instagram"></i
+        ></a>
+    </div>
+    <!-- Grid column -->
+  </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+    </footer>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
