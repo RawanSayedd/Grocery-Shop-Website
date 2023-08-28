@@ -19,19 +19,16 @@ cancelBtn.onclick = () => {
 };
 searchBtn.onclick = () => {
   searchForm.classList.toggle("active");
-  menuList.classList.remove("active");
   cartForm.classList.remove("active");
   signForm.classList.remove("active");
 };
 cartBtn.onclick = () => {
   cartForm.classList.toggle("active");
-  menuList.classList.remove("active");
   searchForm.classList.remove("active");
   signForm.classList.remove("active");
 };
 signBtn.onclick = () => {
   signForm.classList.toggle("active");
-  menuList.classList.remove("active");
   searchForm.classList.remove("active");
   cartForm.classList.remove("active");
 };
