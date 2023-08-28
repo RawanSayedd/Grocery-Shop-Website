@@ -373,7 +373,8 @@ button a {
   border-radius: 50%;
   font-weight: 600;
 }
-.categories p {
+.categories p,
+.review p {
   opacity: 0.5;
 }
 /* ********************************** */
