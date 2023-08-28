@@ -468,6 +468,9 @@ button a {
   .content .cart-items-container.active {
     right: 0px;
   }
+  .content .sign-in-container {
+    width: 360px;
+  }
   .content .search-form {
     width: 300px;
   }
