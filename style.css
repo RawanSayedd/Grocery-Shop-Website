@@ -463,16 +463,16 @@ button a {
 }
 @media (max-width: 576px) {
   .content .sign-in-container.active {
-    right: 50px;
+    right: 20px;
   }
   .content .cart-items-container.active {
-    right: 30px;
+    right: 10px;
   }
   .content .search-form {
     width: 400px;
   }
   .content .search-form.active {
-    right: 20px;
+    right: 10px;
   }
   .home .content .title {
     padding: 120px 0;
